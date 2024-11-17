@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym - Transform Your Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #ff4646;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff3333;
+        }
+
+        .features {
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-box h3 {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .membership {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .membership h2 {
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .plan {
+            padding: 40px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .plan .price {
+            font-size: 2.5rem;
+            color: #ff4646;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .plans {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>FitZone Gym</h1>
+        <p>Transform Your Body, Transform Your Life</p>
+        <a href="#" class="cta-button">Join Now</a>
+    </header>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>Modern Equipment</h3>
+                <p>State-of-the-art machines and free weights for optimal training</p>
+            </div>
+            <div class="feature-box">
+                <h3>Expert Trainers</h3>
+                <p>Certified professionals to guide your fitness journey</p>
+            </div>
+            <div class="feature-box">
+                <h3>Group Classes</h3>
+                <p>Energetic group sessions from yoga to HIIT</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership">
+        <h2>Membership Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Basic</h3>
+                <div class="price">$29/mo</div>
+                <p>Access to gym floor<br>Basic equipment<br>Locker room access</p>
+                <a href="#" class="cta-button">Select Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <div class="price">$49/mo</div>
+                <p>All Basic features<br>Group classes<br>Personal trainer consultation</p>
+                <a href="#" class="cta-button">Select Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Elite</h3>
+                <div class="price">$89/mo</div>
+                <p>All Premium features<br>Personal training sessions<br>Nutrition planning</p>
+                <a href="#" class="cta-button">Select Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 FitZone Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
